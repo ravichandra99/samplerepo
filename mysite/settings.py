@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'webinar',
     'crispy_forms',
     'phonenumber_field',
+    'import_export',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,6 +129,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles'),
     ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'
 EMAIL_PORT = 587
@@ -137,3 +141,5 @@ EMAIL_USE_TLS = True
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'IN'
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
