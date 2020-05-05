@@ -6,5 +6,5 @@ class UserForm(ModelForm):
 	class Meta:
 		model = JustUser
 		fields = '__all__'
-		#exclude = ['just_id',]
+		exclude = ['just_id',]
 

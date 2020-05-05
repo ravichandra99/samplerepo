@@ -5,5 +5,5 @@ app_name = 'webinar'
 
 urlpatterns = [
     path('', Index, name = 'index'),
-    path('thanks/', thanks, name = 'thanks'),
+    path('thanks/<just_id>', thanks, name = 'thanks'),
 ]
